@@ -1,0 +1,10 @@
+services:
+  - type: static_site
+    name: AllugatorClone
+    env: static
+    buildCommand: ""  # Se não houver um comando de build, deixe vazio
+    publishPath: catalog  # Caminho para a pasta onde está seu index.html
+    routes:
+      - type: redirect
+        source: /
+        destination: /all.html
